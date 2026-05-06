@@ -1,0 +1,15 @@
+---
+const renderedAt = new Date().toISOString();
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>SSR page</title>
+</head>
+<body>
+	<h1>Server-rendered</h1>
+	<p>Rendered at: <code>{renderedAt}</code></p>
+	<p>Reload — the timestamp should change each time. If you see the same value twice or a 500, the Node runtime isn't executing.</p>
+</body>
+</html>
